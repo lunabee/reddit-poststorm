@@ -1,0 +1,15 @@
+!*
+
+npm-debug.log
+
+*.js
+*.js.map
+*.d.ts
+
+*/*.js
+*/*.js.map
+*/*.d.ts
+
+*/*/*.js
+*/*/*.js.map
+*/*/*.d.ts
