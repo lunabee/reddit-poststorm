@@ -1,1 +1,4 @@
-<h1>I'm HTML</h1>
+<section *ngFor="let PostData of PostDatas" >
+ <h2>{{PostData.title | uppercase}}</h2>
+ <p class="url">{{PostData.url}}</p>
+</section>
