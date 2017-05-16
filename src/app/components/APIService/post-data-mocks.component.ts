@@ -1,6 +1,6 @@
 import { PostData } from './post-data';
 
-export const POSTDATAS: PostData[] = [{
+export const MOCKDATAS: PostData[] = [{
  "author": "_NITRISS_",
  "subreddit_name_prefixed": "r/aww",
  "title": "\"A little help here guys\"", //Make sure we're adding these escapes
