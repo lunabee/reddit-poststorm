@@ -1,14 +1,13 @@
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-//import { PostDisplayComponent } from './app/components/APIService/app.module'
-//import { PostDisplayComponent } from './app/post-display.component'
-import { PostDisplayComponent } from './app/components/APIService/post-display.component'
+//import { SubmissionDisplayComponent } from './app/components/APIService/app.module'
+import { SubmissionDisplayComponent } from './app/components/APIService/submission-display.component'
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ PostDisplayComponent ],
-  bootstrap: [ PostDisplayComponent ]
+  declarations: [ SubmissionDisplayComponent ],
+  bootstrap: [ SubmissionDisplayComponent ]
 })
 class AppModule {}
 

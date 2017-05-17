@@ -1,5 +1,5 @@
 import { NgModule, Component } from '@angular/core';
-//import { PostDisplayComponent } from './components/APIService/post-display.component'
+//import { SubmissionDisplayComponent } from './components/APIService/submission-display.component'
 
 
 @Component({

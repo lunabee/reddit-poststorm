@@ -1,4 +1,4 @@
-export class PostData {
+export class SubmissionData {
  author: string;
  subreddit_name_prefixed: string;
  title: string;

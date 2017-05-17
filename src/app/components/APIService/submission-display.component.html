@@ -1,0 +1,4 @@
+<section *ngFor="let SubmissionData of SubmissionDatas" >
+ <h2>{{SubmissionData.subreddit_name_prefixed}} {{SubmissionData.title | uppercase}}</h2>
+ <p class="url"><img src="{{SubmissionData.url}}" /></p>
+</section>
