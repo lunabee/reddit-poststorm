@@ -1,4 +1,9 @@
-<section *ngFor="let SubmissionData of SubmissionDatas" >
- <h2>{{SubmissionData.subreddit_name_prefixed}} {{SubmissionData.title | uppercase}}</h2>
- <p class="url"><img src="{{SubmissionData.url}}" /></p>
-</section>
+<article *ngFor="let SubmissionData of SubmissionDatas">
+    <h2>{{SubmissionData.subreddit_name_prefixed}} <a href="http://www.reddit.com{{SubmissionData.permalink}}">{{SubmissionData.title | uppercase}}</a></h2>
+    <details>
+        <summary>
+            <img src="{{SubmissionData.thumbnail}}" />
+        </summary>
+        <p class="url"><img src="{{SubmissionData.url}}" /></p>
+    </details>
+</article>
