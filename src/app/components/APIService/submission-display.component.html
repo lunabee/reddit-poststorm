@@ -2,8 +2,9 @@
     <h2>{{SubmissionData.subreddit_name_prefixed}} <a href="http://www.reddit.com{{SubmissionData.permalink}}">{{SubmissionData.title | uppercase}}</a></h2>
     <details>
         <summary>
-            <img src="{{SubmissionData.thumbnail}}" />
+            <img class="image" src="{{SubmissionData.thumbnail}}" />
         </summary>
-        <p class="url"><img src="{{SubmissionData.url}}" /></p>
+        <p *ngIf="SubmissionData.submission_hint === 'image'" class="image"><img src="{{SubmissionData.url}}" /></p>
+        <p class="selftext">{{SubmissionData.selftext}}</p>
     </details>
 </article>
