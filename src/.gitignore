@@ -2,6 +2,12 @@
 
 npm-debug.log
 
+*.scssc
+*/*.scssc
+*/*/*.scssc
+*/*/*/*.scssc
+*/*/*/*/*.scssc
+
 *.js
 *.js.map
 *.d.ts
