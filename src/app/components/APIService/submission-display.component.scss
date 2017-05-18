@@ -1,0 +1,35 @@
+$color-lightblue: #5FBFF9;
+$color-darkblue: #274060;
+$color-pumpkin: #FF4916;
+$color-background: #F0F8EA;
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+@mixin submission {
+    border: 1px solid $color-darkblue;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    h2 {
+        color: $color-pumpkin;
+    }
+    a {
+        text-decoration: none;
+        color: #35281D;
+    }
+    a:hover {
+        color: $color-darkblue;
+    }
+}
+
+.submission-small {
+    @include submission;
+    @include alpha-attribute('background-color', rgba(95, 191, 249, .25), $color-background);
+    width: 200px;
+}    

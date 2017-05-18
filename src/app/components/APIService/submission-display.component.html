@@ -1,4 +1,4 @@
-<article *ngFor="let SubmissionData of SubmissionDatas">
+<article *ngFor="let SubmissionData of SubmissionDatas" class="submission-small">
     <h2>{{SubmissionData.subreddit_name_prefixed}} <a href="http://www.reddit.com{{SubmissionData.permalink}}">{{SubmissionData.title | uppercase}}</a></h2>
     <details>
         <summary>

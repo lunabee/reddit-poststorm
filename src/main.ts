@@ -5,7 +5,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { SubmissionDisplayComponent } from './app/components/APIService/submission-display.component'
 
 @NgModule({
-  imports: [ BrowserModule, Http ],
+  imports: [ BrowserModule ],
   declarations: [ SubmissionDisplayComponent ],
   bootstrap: [ SubmissionDisplayComponent ]
 })

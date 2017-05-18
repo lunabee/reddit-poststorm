@@ -1,1 +1,30 @@
 @import 'reset';
+$header-height: 50px;
+$color-lightblue: #5FBFF9;
+$color-darkblue: #274060;
+$color-pumpkin: #FF4916;
+$color-background: #F0F8EA;
+
+body {
+    background: url(../img/soft-honey-hive.png) repeat 0 0 $color-background;
+}
+
+header {
+    background: $color-lightblue;
+    background: linear-gradient($color-lightblue, $color-darkblue);
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    overflow: hidden;
+    h1 {
+        display: block;
+        font-size: $header-height;
+        font-style: italic;
+        float: left;
+        color: $color-pumpkin;
+    }
+    >span {
+        display: inline-block;
+        color: $color-darkblue;
+    }
+}

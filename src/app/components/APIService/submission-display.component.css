@@ -1,0 +1,17 @@
+.submission-small {
+  border: 1px solid #274060;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  background-color: #cceaee;
+  background-color: rgba(95, 191, 249, 0.25);
+  width: 200px; }
+  .submission-small h2 {
+    color: #FF4916; }
+  .submission-small a {
+    text-decoration: none;
+    color: #35281D; }
+  .submission-small a:hover {
+    color: #274060; }
+
+/*# sourceMappingURL=submission-display.component.css.map */
