@@ -1,13 +1,14 @@
 import { NgModule, Component } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { SubmissionDisplayComponent } from './app/components/APIService/submission-display.component'
+import { MenuDisplayComponent } from './app/core/menu-display.module'
 
 @NgModule({
-  imports: [ BrowserModule ],
-  declarations: [ SubmissionDisplayComponent ],
-  bootstrap: [ SubmissionDisplayComponent ]
+  imports: [ BrowserModule, HttpModule ],
+  declarations: [ SubmissionDisplayComponent, MenuDisplayComponent ],
+  bootstrap: [ SubmissionDisplayComponent, MenuDisplayComponent ]
 })
 class AppModule {}
 

@@ -1,0 +1,10 @@
+.menu {
+  float: right; }
+  .menu > li {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 10px; }
+    .menu > li .isSelected {
+      background-color: blue; }
+
+/*# sourceMappingURL=menu-display.module.css.map */

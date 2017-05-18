@@ -1,0 +1,7 @@
+<ul class=menu>
+    <li *ngFor="let menuItem of menuItems" [class.isSelected]="menuItem.isSelected" (click)="setSelected()">
+        {{menuItem.title}}
+    </li>
+</ul>
+
+<!--(click)="selectTab(menuItem)"-->
