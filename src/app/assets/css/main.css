@@ -41,9 +41,15 @@ table {
   border-spacing: 0; }
 
 body {
-  background: url(../img/soft-honey-hive.png) repeat 0 0 #F0F8EA; }
+  background: url(../img/soft-honey-hive.png) repeat 0 0 #F0F8EA;
+  margin: auto;
+  max-width: 970px; }
+
+main {
+  width: 100%; }
 
 header {
+  border-radius: 3px;
   background: #5FBFF9;
   background: linear-gradient(#5FBFF9, #274060);
   margin: 10px;
@@ -56,8 +62,5 @@ header {
     font-style: italic;
     float: left;
     color: #FF4916; }
-  header > span {
-    display: inline-block;
-    color: #274060; }
 
 /*# sourceMappingURL=main.css.map */
