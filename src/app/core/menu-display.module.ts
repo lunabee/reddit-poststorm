@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class MenuDisplayComponent { 
+    // I want these to be dynamically generated based on file in core
     menuItems = [{
         "title": "Future",
         "isSelected": true
