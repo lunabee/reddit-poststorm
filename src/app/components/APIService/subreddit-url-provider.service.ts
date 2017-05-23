@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class subredditURLProvider {
+export class subredditURLProviderService {
     jsonRequestUrlProvider(multireddit: Array<string>, subredditSort: string, submissionNum: number) {
         let jsonUrlArray : Array<string> = [];
         for (let subreddit of multireddit) {

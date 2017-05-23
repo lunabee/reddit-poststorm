@@ -1,6 +1,6 @@
 <ul class=menu>
-    <li *ngFor="let menuItem of menuItems" [class.isSelected]="menuItem.isSelected" (click)="setSelected()">
-        {{menuItem.title}}
+    <li *ngFor="let menuItem of menuItems" [class.isSelected]="selectedMultireddit === menuItem" (click)="setSelected(menuItem)">
+        {{menuItem}}
     </li>
 </ul>
 

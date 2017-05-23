@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Core } from './core/core.module'
 
 @NgModule({
-  imports: [ BrowserModule, HttpModule ],
+  imports: [ BrowserModule, HttpModule, Core ],
   declarations: [ ],
+  providers: [ Core ],
   bootstrap: [ ]
 })
-class AppModule {}
+export class AppModule {}

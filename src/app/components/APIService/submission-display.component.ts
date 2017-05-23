@@ -7,7 +7,7 @@ import { MOCKDATAS } from './submission-data-mocks.component'
     templateUrl: './submission-display.component.html',
     styleUrls: ['./submission-display.component.css']
 })
-export class SubmissionDisplayComponent { 
+export class submissionDisplayComponent { 
     SubmissionDatas: SubmissionData[];
     ngOnInit() {
         this.SubmissionDatas = MOCKDATAS;

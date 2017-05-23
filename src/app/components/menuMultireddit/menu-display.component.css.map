@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA,KAAM;EACF,KAAK,EAAC,KAAK;EACX,UAAI;IACA,OAAO,EAAC,YAAY;IACvB,QAAQ,EAAE,MAAM;IAChB,MAAM,EAAE,MAAM;IACX,sBAAY;MACR,gBAAgB,EAAE,IAAI",
-"sources": ["menu-display.module.scss"],
+"sources": ["menu-display.component.scss"],
 "names": [],
-"file": "menu-display.module.css"
+"file": "menu-display.component.css"
 }
