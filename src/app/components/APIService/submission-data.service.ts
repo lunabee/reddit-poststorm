@@ -1,17 +1,20 @@
 import { Injectable } from '@angular/core';
-import { SubmissionData } from './submission-data';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
+import { SubmissionData } from './submission-data';
 
 
 @Injectable()
-export class SubmissionDataService {
+export class submissionDataService {
 
     constructor( private http: Http ) { };
     
-    getSubredditSubmissions( subredditUrl: Array<string> ) {
-        return this.http.get('subredditUrl')
-                        .map( response => <SubmissionData[]>response.json().data );
+    getSubredditSubmissions( subredditURLs: Array<string> ) {
+        for(let subredditURL of subredditURLs) {
+            return this.http.get('subredditURL')
+                            .map( response => <SubmissionData[]>response.json().data );
+        };
     }
     
 }
+
