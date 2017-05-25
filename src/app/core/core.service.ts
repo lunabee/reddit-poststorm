@@ -15,7 +15,7 @@ export class coreService {
     }
     getSubredditData(menuItem: string) {
         let subreddits = this.multiredditService.multireddits.find(mr => mr.title === menuItem).subreddits;
-        let urls = this.subredditURLProviderService.jsonRequestUrlProvider(subreddits, "hot", 5);
+        let urls = this.subredditURLProviderService.jsonRequestUrlProvider(subreddits, "hot", 10);
         let dataObservables = this.submissionDataService.getSubredditSubmissions(urls);
     }
 }

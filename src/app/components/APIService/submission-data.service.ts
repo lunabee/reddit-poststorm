@@ -9,7 +9,17 @@ import { SubmissionData } from './submission-data';
 export class submissionDataService {
     submissionDataChange: EventEmitter<SubmissionData[]> = new EventEmitter();
     constructor( private http: Http ) { };
-    
+
+    shuffle( array: Array<Response> ) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        }
+    return array;
+    };
+
     getSubredditSubmissions( subredditURLs: Array<string> ) {
         let observables: Array<Observable<Response>> = [];
         for(let subredditURL of subredditURLs) {
@@ -20,6 +30,7 @@ export class submissionDataService {
             for(let result of results) {
                 submissions = submissions.concat(result["data"]["children"]);
             };
+            this.shuffle(submissions);
             let submissionDataArray: SubmissionData[] = [];
             for (let submission of submissions){
                 let submissionData = new SubmissionData();
@@ -35,7 +46,7 @@ export class submissionDataService {
                 submissionData.submission_hint = submission["data"]["post_hint"];
                 submissionDataArray.push(submissionData);
             };
-
+            
             this.submissionDataChange.emit(submissionDataArray);
         });
     }

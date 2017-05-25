@@ -48,8 +48,8 @@ main {
 
 header {
   border-radius: 3px;
-  background: #5FBFF9;
-  background: linear-gradient(#5FBFF9, #274060);
+  background: #4ECDC4;
+  background: linear-gradient(#4ECDC4, #1A535C);
   margin: 10px;
   padding: 10px;
   height: auto;
@@ -59,6 +59,6 @@ header {
     font-size: 50px;
     font-style: italic;
     float: left;
-    color: #FF4916; }
+    color: #FFE66D; }
 
 /*# sourceMappingURL=main.css.map */

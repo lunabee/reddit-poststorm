@@ -12,7 +12,7 @@
   break-inside: avoid;
   padding: 5px; }
   .masonry-layout-panel :hover {
-    background-color: #bfe5fc; }
+    background-color: #BEECE9; }
 
 .masonry-layout-panel-content {
   padding: 20px;
@@ -22,14 +22,13 @@
   .masonry-layout-panel-content h2 a {
     display: inline-block;
     width: 100%;
-    color: #274060;
+    color: #1A535C;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     text-align: center; }
   .masonry-layout-panel-content h2 a:hover {
-    text-decoration: underline;
-    color: #274060; }
+    color: #868984; }
   .masonry-layout-panel-content img {
     width: 100%; }
   .masonry-layout-panel-content p {

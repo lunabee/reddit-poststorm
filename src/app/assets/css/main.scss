@@ -1,8 +1,12 @@
 @import 'reset';
 $header-height: 50px;
-$color-lightblue: #5FBFF9;
-$color-darkblue: #274060;
-$color-pumpkin: #FF4916;
+$color-superlightblue: #BEECE9;
+$color-lightblue: #4ECDC4;
+$color-darkblue: #1A535C;
+$color-pumpkin: #E84314;
+$color-lightred: #FF6B6B;
+$color-lightyellow: #FFE66D;
+$color-yellow: #E8D264;
 $color-background: #F0F8EA;
 
 body {
@@ -26,6 +30,6 @@ header {
         font-size: $header-height;
         font-style: italic;
         float: left;
-        color: $color-pumpkin;
+        color: $color-lightyellow;
     }   
 }

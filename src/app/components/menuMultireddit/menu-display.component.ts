@@ -10,9 +10,14 @@ import { multireddit } from './multireddit'
 })
 
 export class menuDisplayComponent {
-    selectedMultireddit: string = "Future"
     constructor( private core: coreService) { }
+    
     menuItems = this.core.getDefaultMultiredditNames();
+    selectedMultireddit: string = this.menuItems[0];
+
+    ngOnInit(){
+        this.core.getSubredditData(this.selectedMultireddit);
+    }
 
     setSelected(menuItem: string) {
         this.selectedMultireddit = menuItem;

@@ -1,6 +1,12 @@
-$color-lightblue: #5FBFF9;
-$color-darkblue: #274060;
-$color-pumpkin: #FF4916;
+$color-superlightblue: #BEECE9;
+$color-lightblue: #4ECDC4;
+$color-darkblue: #1A535C;
+$color-pumpkin: #E84314;
+$color-lightred: #FF6B6B;
+$color-lightyellow: #FFE66D;
+$color-yellow: #E8D264;
+$color-grey: #b8bcb5;
+$color-darkgrey: #868984;
 $color-background: #F0F8EA;
 
 @mixin alpha-attribute($attribute, $color, $background) {
@@ -30,7 +36,7 @@ $color-background: #F0F8EA;
   break-inside: avoid;
   padding: 5px;
   :hover{
-    background-color: #bfe5fc;
+    background-color: $color-superlightblue;
   }
 }
 .masonry-layout-panel-content {
@@ -47,8 +53,7 @@ $color-background: #F0F8EA;
     text-align: center;
   }
   h2 a:hover {
-    text-decoration: underline;
-    color: $color-darkblue;
+    color: $color-darkgrey;
   }
   img {
     width: 100%;

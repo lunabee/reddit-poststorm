@@ -1,11 +1,15 @@
+$color-lightyellow: #FFE66D;
+
 .menu {
     float:right;
     >li {
         display:inline-block;
 	    overflow: hidden;
 	    margin: 0 10px;
-        .isSelected {
-            background-color: blue;
-        }
     }
+}
+.isSelected {
+    text-decoration: underline;
+    font-weight: bold;
+    color: $color-lightyellow;
 }
