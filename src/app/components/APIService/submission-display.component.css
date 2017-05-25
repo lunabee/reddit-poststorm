@@ -1,17 +1,39 @@
-.submission-small {
+.masonry-layout {
+  column-count: 1;
+  column-gap: 0; }
+
+@media (min-width: 768px) {
+  .masonry-layout {
+    column-count: 2; } }
+@media (min-width: 1200px) {
+  .masonry-layout {
+    column-count: 3; } }
+.masonry-layout-panel {
+  break-inside: avoid;
+  padding: 5px; }
+  .masonry-layout-panel :hover {
+    background-color: #bfe5fc; }
+
+.masonry-layout-panel-content {
+  padding: 20px;
   border-radius: 10px;
-  float: left;
-  margin: 10px;
-  padding: 5px;
-  background-color: #cceaee;
-  background-color: rgba(95, 191, 249, 0.25);
-  width: 200px; }
-  .submission-small h2 {
-    color: #FF4916; }
-  .submission-small a {
+  background-color: #b8bcb5;
+  background-color: rgba(128, 128, 128, 0.5); }
+  .masonry-layout-panel-content h2 a {
+    display: inline-block;
+    width: 100%;
+    color: #274060;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
-    color: #35281D; }
-  .submission-small a:hover {
+    text-align: center; }
+  .masonry-layout-panel-content h2 a:hover {
+    text-decoration: underline;
     color: #274060; }
+  .masonry-layout-panel-content img {
+    width: 100%; }
+  .masonry-layout-panel-content p {
+    overflow-y: auto;
+    max-height: 300px; }
 
 /*# sourceMappingURL=submission-display.component.css.map */

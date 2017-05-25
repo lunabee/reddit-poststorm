@@ -8,9 +8,7 @@ import { SubmissionData } from './submission-data';
 @Injectable()
 export class submissionDataService {
     submissionDataChange: EventEmitter<SubmissionData[]> = new EventEmitter();
-    constructor( 
-        private http: Http
-     ) { };
+    constructor( private http: Http ) { };
     
     getSubredditSubmissions( subredditURLs: Array<string> ) {
         let observables: Array<Observable<Response>> = [];
@@ -28,15 +26,16 @@ export class submissionDataService {
                 submissionData.title = submission["data"]["title"];
                 submissionData.author = submission["data"]["author"];
                 submissionData.subreddit_name_prefixed = submission["data"]["subreddit_name_prefixed"];
-                submissionData.title = submission["data"]["title"];
                 submissionData.thumbnail = submission["data"]["thumbnail"];
                 submissionData.selftext = submission["data"]["selftext"];
                 submissionData.permalink = submission["data"]["permalink"];
                 submissionData.url = submission["data"]["url"];
                 submissionData.score = submission["data"]["score"];
+                submissionData.num_comments = submission["data"]["num_comments"];
                 submissionData.submission_hint = submission["data"]["post_hint"];
                 submissionDataArray.push(submissionData);
             };
+
             this.submissionDataChange.emit(submissionDataArray);
         });
     }

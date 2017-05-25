@@ -41,9 +41,7 @@ table {
   border-spacing: 0; }
 
 body {
-  background: url(../img/soft-honey-hive.png) repeat 0 0 #F0F8EA;
-  margin: auto;
-  max-width: 970px; }
+  background: url(../img/soft-honey-hive.png) repeat 0 0 #F0F8EA; }
 
 main {
   width: 100%; }

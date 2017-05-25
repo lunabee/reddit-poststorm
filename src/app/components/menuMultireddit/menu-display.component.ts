@@ -11,9 +11,7 @@ import { multireddit } from './multireddit'
 
 export class menuDisplayComponent {
     selectedMultireddit: string = "Future"
-    constructor(
-        private core: coreService
-    ) { }
+    constructor( private core: coreService) { }
     menuItems = this.core.getDefaultMultiredditNames();
 
     setSelected(menuItem: string) {

@@ -7,5 +7,6 @@ export class SubmissionData {
     permalink: string; //this will need to be concat with www.reddit.com
     url: string;
     score: number;
+    num_comments: number;
     submission_hint: string; //equivilent to reddit's post_hint, want consistent naming within app
 }

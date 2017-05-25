@@ -10,7 +10,23 @@ export class multiredditService {
     {
         "title": "TechHumor",
         "subreddits": ["talesfromtechsupport", "programminghorror", "ProgrammerHumor", "tifu", "techsupportmacgyver"]
+    },
+    {
+        "title": "Cycling",
+        "subreddits": ["bicycling", "cycling", "biketouring", "whichbike", "bikecommuting", "Bikeporn", "EveryDayRide", "bicycleculture"]
+    },
+    {
+        "title": "Nintendo",
+        "subreddits": ["nintendo", "NintendoSwitch", "Mario", "truezelda", "pokemon"]
+    },
+    {
+      "title": "Wholesome",
+      "subreddits": ["UpliftingNews", "MadeMeSmile", "BeforeNAfterAdoption", "AnimalsBeingBros", "wholesomegifs"]
     }];
 
-
 }; 
+
+    // {
+    //     "title": "",
+    //     "subreddits": []
+    // }

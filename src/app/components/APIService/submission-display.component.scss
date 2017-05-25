@@ -11,25 +11,50 @@ $color-background: #F0F8EA;
   #{$attribute}: $color;
 }
 
-@mixin submission {
-    border-radius: 10px;
-    float: left;
-    margin: 10px;
-    padding: 5px;
-    h2 {
-        color: $color-pumpkin;
-    }
-    a {
-        text-decoration: none;
-        color: #35281D;
-    }
-    a:hover {
-        color: $color-darkblue;
-    }
+.masonry-layout {
+  column-count: 1;
+  column-gap: 0;
+}
+@media (min-width: 768px) {
+  .masonry-layout {
+    column-count: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .masonry-layout {
+    column-count: 3;
+  }
 }
 
-.submission-small {
-    @include submission;
-    @include alpha-attribute('background-color', rgba(95, 191, 249, .25), $color-background);
-    width: 200px;
-}    
+.masonry-layout-panel {
+  break-inside: avoid;
+  padding: 5px;
+  :hover{
+    background-color: #bfe5fc;
+  }
+}
+.masonry-layout-panel-content {
+  padding: 20px;
+  border-radius: 10px;
+  @include alpha-attribute(background-color, rgba(128,128,128, .5), $color-background);
+  h2 a {
+    display: inline-block;
+    width: 100%;
+    color: $color-darkblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+  h2 a:hover {
+    text-decoration: underline;
+    color: $color-darkblue;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    overflow-y: auto;
+    max-height: 300px;
+  }
+}

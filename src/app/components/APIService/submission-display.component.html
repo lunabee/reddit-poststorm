@@ -1,10 +1,14 @@
-<article *ngFor="let SubmissionData of SubmissionDatas" class="submission-small">
-    <h2>{{SubmissionData.subreddit_name_prefixed}} <a href="http://www.reddit.com{{SubmissionData.permalink}}">{{SubmissionData.title | uppercase}}</a></h2>
-    <details>
-        <summary>
-            <img class="image" src="{{SubmissionData.thumbnail}}" />
-        </summary>
-        <p *ngIf="SubmissionData.submission_hint === 'image'" class="image"><img src="{{SubmissionData.url}}" /></p>
-        <p class="selftext">{{SubmissionData.selftext}}</p>
-    </details>
-</article>
+<div class="masonry-layout">
+    <div *ngFor="let SubmissionData of SubmissionDatas" class=”masonry-layout-cluster-segment-column”>
+        <article class="masonry-layout-panel">
+            <div class="masonry-layout-panel-content">
+                <h2>{{SubmissionData.subreddit_name_prefixed}} <a href="{{SubmissionData.url}}">{{SubmissionData.title | uppercase}}</a></h2>
+                <div *ngIf="SubmissionData.submission_hint === 'image'" class="image"><img src="{{SubmissionData.url}}" /></div>
+                <p class="selftext">{{SubmissionData.selftext}}</p>
+                <div><a href="http://www.reddit.com{{SubmissionData.permalink}}">{{SubmissionData.num_comments}} Comments</a></div>
+            </div>
+        </article>
+    </div>
+</div>
+
+
