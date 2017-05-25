@@ -34,5 +34,14 @@
   .masonry-layout-panel-content p {
     overflow-y: auto;
     max-height: 300px; }
+  .masonry-layout-panel-content a {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    color: #868984;
+    font-weight: bold;
+    text-decoration: none; }
+  .masonry-layout-panel-content a:hover {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=submission-display.component.css.map */

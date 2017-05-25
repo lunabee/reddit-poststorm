@@ -8,8 +8,8 @@ export class multiredditService {
         "subreddits": ["futurology", "TheFutureIsNow", "Automate", "artificial", "MachineLearning"]
     },
     {
-        "title": "TechHumor",
-        "subreddits": ["talesfromtechsupport", "programminghorror", "ProgrammerHumor", "tifu", "techsupportmacgyver"]
+        "title": "Humor",
+        "subreddits": ["talesfromtechsupport", "photoshopbattles", "programminghorror", "ProgrammerHumor", "tifu", "techsupportmacgyver"]
     },
     {
         "title": "Cycling",
@@ -17,11 +17,15 @@ export class multiredditService {
     },
     {
         "title": "Nintendo",
-        "subreddits": ["nintendo", "NintendoSwitch", "Mario", "truezelda", "pokemon"]
+        "subreddits": ["nintendo", "NintendoSwitch", "Mario", "truezelda", "urazelda", "pokemon"]
     },
     {
-      "title": "Wholesome",
-      "subreddits": ["UpliftingNews", "MadeMeSmile", "BeforeNAfterAdoption", "AnimalsBeingBros", "wholesomegifs"]
+        "title": "LearnNewStuff",
+        "subreddits": ["lifehacks", "LifeProTips", "everymanshouldknow", "DIY", "YouShouldKnow", "todayilearned"]
+    },
+    {
+      "title": "Cats",
+      "subreddits": ["Cats", "CatBellies", "CatLoaf", "Toebeans", "KittensGame"]
     }];
 
 }; 

@@ -62,4 +62,15 @@ $color-background: #F0F8EA;
     overflow-y: auto;
     max-height: 300px;
   }
+  a {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    color: $color-darkgrey;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline; 
+  }
 }
