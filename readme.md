@@ -1,4 +1,4 @@
-#File Structure
+# File Structure #
 
     src
     |├── readme.md <-- You are here!
@@ -65,15 +65,15 @@
             Config file.
 
 
-#Known Issues
+# Known Issues #
 
-##High Priority
+## High Priority ##
 
 * Self post text contains bbcode/HTML artifacts, impairing readablility.
 
 * Imgur/giphy images not displaying.
 
-##Low Priority
+## Low Priority ##
 
 * Styling isn't optimum.
 
